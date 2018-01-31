@@ -1,21 +1,20 @@
 from tkinter import *           #for gui
 #please install mysql connect to use this module
-#import mysql.connector          #for database
+import mysql.connector          #for database
 import re
 import time
 import smtplib                  #sendind mail
 from datetime import date       #license checking
 t=time.localtime()
 d=date(t.tm_year,t.tm_mon,t.tm_mday)
-ed=date(2018,8,4)
+ed=date(2018,1,4)
 remain=ed-d
-
-#conn=mysql.connector.connect(user="root",password="",database="Electronic_shop")
+conn=mysql.connector.connect(user="root",password="",database="Electronic_shop")
 #remove below commenting if you want database functionality and customize according to your need
 #for further need ask me...Surely help you 
 #try to have same table in your database...or you will get some errors.
 #conn=mysql.connector.connect(user="enter user",password="enter password",database="enter your database name")
-#cursor=conn.cursor()
+cursor=conn.cursor()
 window=Tk()
 window.title('Electronic Shop')
 #All Frames
