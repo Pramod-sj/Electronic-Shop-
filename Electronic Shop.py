@@ -1,3 +1,4 @@
+#copy the electronic_databse file and paste it to c:/wamp64/bin/mysql/mysqlx.x.x/data/
 from tkinter import *           #for gui
 #please install mysql connect to use this module
 import mysql.connector          #for database
